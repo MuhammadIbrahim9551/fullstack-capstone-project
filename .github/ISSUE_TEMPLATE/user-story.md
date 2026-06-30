@@ -22,3 +22,4 @@ assignees: ''
 Given [some context]
 When [certain action is taken]
 Then [the outcome is observed]
+```
