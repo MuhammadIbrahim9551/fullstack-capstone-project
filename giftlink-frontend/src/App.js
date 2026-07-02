@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage';
+import Profile from './components/Profile/Profile';
 import LoginPage from './components/LoginPage/LoginPage';
 import RegisterPage from './components/RegisterPage/RegisterPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,11 +15,12 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/app" element={<MainPage />} />
-        <Route path="/app/login" element={<LoginPage />} />
-        <Route path="/app/register" element={<RegisterPage />} />
-      </Routes>
+  <Route path="/" element={<MainPage />} />
+  <Route path="/app" element={<MainPage />} />
+  <Route path="/app/login" element={<LoginPage />} />
+  <Route path="/app/register" element={<RegisterPage />} />
+  <Route path="/app/profile" element={<Profile />} />
+</Routes>
     </>
   );
 }
